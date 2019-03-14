@@ -1,0 +1,93 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 0 15px 0;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+/* For video modal CD */
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+/* For image overlay CD */
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+ 
+
+/* Make the image to responsive 
+.image {
+  width: 100%;
+  height: auto;
+}
+ */
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .3s ease;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  margin: auto;
+  /* font-size: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;*/
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  /* text-align: center;*/
+}
+
+/* When you move the mouse over the icon, change color */
+.icon:hover {
+  color: deepskyblue;
+}
