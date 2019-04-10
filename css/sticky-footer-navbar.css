@@ -91,3 +91,7 @@ code {
 .icon:hover {
   color: deepskyblue;
 }
+
+.icon:visited {
+    color: #eee;
+}
