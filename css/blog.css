@@ -14,8 +14,13 @@ nav a:hover {
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 500px) {
+    .blog-header-logo {
+      font-size: 2.5rem;
+    }
 }
 
 .blog-header-logo:hover {
