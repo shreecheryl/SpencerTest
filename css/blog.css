@@ -2,11 +2,6 @@
 
 /* CD updates */
 
-nav a:hover {
-    text-decoration: none;
-    border-bottom: 2px solid green;
-}
-
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
