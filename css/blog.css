@@ -2,11 +2,6 @@
 
 /* CD updates */
 
-.blog-header {
-  line-height: 1;
-  border-bottom: 1px solid #e5e5e5;
-}
-
 .blog-header-logo {
   font-size: 2rem;
 }
@@ -16,9 +11,9 @@
       font-size: 2.5rem;
     }
     
-    .main {
+    /* .main {
       padding: 0 5%;
-    }
+    } */
     
     .container {
       max-width: 800px;
