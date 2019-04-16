@@ -1,6 +1,9 @@
 /* stylelint-disable selector-list-comma-newline-after */
 
 /* CD updates */
+.blog-header {
+   border-bottom: 1px solid #eaeaea; 
+}
 
 .blog-header-logo {
   font-size: 2rem;
