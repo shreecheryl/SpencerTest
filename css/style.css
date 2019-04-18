@@ -8,8 +8,7 @@
 }
       
         #wrapper {
-          height: 100vh;
-          justify-content: space-between;
+          min-height: height: 100vh;
         }
         
         header {
