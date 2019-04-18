@@ -17,26 +17,29 @@
   </head>
     
   <body>
-    <div id="homeWrapper" class="container d-flex flex-column justify-content-between pt-4">
-        <div id="header" class="row flex-column justify-content-center">
+    <div id="homeWrapper" class="container-fluid d-flex flex-column justify-content-between justify-content-start-md pt-4">
+        <div id="header" class="row">
+          <div class="col-12">
            <header class="mb-2">
-            <div class="row justify-content-center">
+            <div class="d-flex justify-content-center">
                <div class="portfolio-header d-flex flex-column align-items-center">
-                <a class="portfolio-header-logo text-dark" href="#">SPENCER COMBS</a>
+                <a class="portfolio-header-logo text-dark" href="index.html">SPENCER COMBS</a>
                 <p>Director of Photography</p>
                </div>
              </div>
             </header>
 
-         <nav class="navbar justify-content-center mb-2">
-              <a href="#">WORK</a>
+            <nav class="navbar justify-content-center mb-2">
+              <a href="codeBlack.html">WORK</a>
               <a href="#">PHOTOGRAPHY</a>
               <a href="#">CONTACT</a>
-         </nav>
+            </nav>
+         </div>
         </div>
         
-        <div id="carousel" class="row justify-content-center">    
-            <div id="carouselHome">
+        <div id="carousel" class="row justify-content-center">
+            <div class="col-12">   
+             <div id="carouselHome">
                <div id="forControls" class="carousel slide " data-ride="carousel">
                   <div class="carousel-inner">
                   </div>
@@ -50,6 +53,7 @@
                     <span class="sr-only">Next</span>
                   </a>
               </div>
+             </div>
             </div>
             
           <!-- below not working with #wrapper justify-content space between
@@ -69,7 +73,7 @@
         </div>
        
         <footer class="row justify-content-center pt-3"><p class="text-muted">Spencer Combs | &copy; 2019</p></footer>
-    </div> <!-- end of wrapper -->
+        </div> <!-- end of wrapper -->
     
 
     <!-- Optional JavaScript -->
