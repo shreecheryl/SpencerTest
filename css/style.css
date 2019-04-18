@@ -2,15 +2,19 @@
             font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 300!important;
         }
-
-.showTitle > h4 {
-    
-}
       
-        #wrapper {
-          height: 100vh;
+        #homeWrapper {
+            height: 100vh;
+            justify-content: space-between;
         }
-        
+
+        @media (min-width: 800px)  {
+            #homeWrapper {
+                height: auto;
+                justify-content: flex-start;
+            }
+        }
+
         header {
             line-height: 1.3;
         }
