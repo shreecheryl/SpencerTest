@@ -2,6 +2,13 @@
             font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 300!important;
         }
+
+.container-fluid, .row  {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
       
         #homeWrapper {
             height: auto;
@@ -38,7 +45,10 @@
         }
             
             .container-fluid {
+              width: 100%;
               max-width: 1200px;
+              margin-right: auto;
+              margin-left: auto;
             }
         }
       
