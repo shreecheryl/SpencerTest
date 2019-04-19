@@ -3,25 +3,18 @@
             font-weight: 300!important;
         }
 
-.container-fluid, .row  {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
+        /* removing right left margins */
+        .container-fluid, .row  {
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
       
-        #homeWrapper {
+        #homeContainer, #magnumContainer, #wompWompContainer, #ptsdContainer {
             height: auto;
             min-height: 100vh;
-            /* justify-content: space-between; */
         }
-
-        /* @media (min-width: 800px)  {
-            #homeWrapper {
-                height: auto;
-                justify-content: flex-start;
-            }
-        } */
 
         header {
             line-height: 1.3;
