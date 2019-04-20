@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>Code Black</title>
+  </head>
+    
+  <body>
+    <div class="container-fluid d-flex flex-column pt-4">
+        <div id="header" class="row flex-column flex-nowrap">
+            <header class="mb-2">
+                <div class="d-flex justify-content-center">
+                   <div class="portfolio-header d-flex flex-column align-items-center">
+                    <a class="portfolio-header-logo text-dark" href="index.html">SPENCER COMBS</a>
+                    <p>Director of Photography</p>
+                   </div>
+                </div>
+            </header>
+
+            <nav class="navbar justify-content-center mb-2 px-0">
+              <a href="work.html">WORK</a>
+              <a href="#">PHOTOGRAPHY</a>
+              <a href="#">CONTACT</a>
+            </nav>
+        </div> <!-- end of header -->
+        
+        <div class="row no-gutters">  <!-- row for centered main content -->  
+            <div class="col-12 d-flex justify-content-between showTitle pt-3">
+                <button id="prev" type="button" class="btn">&larr; prev</button>
+                <h4 class="text-center">CODE BLACK </h4>
+                <button id="next" type="button" class="btn">next &rarr;</button>
+           </div>
+            <div class="col-12">
+               <div class="embed-responsive embed-responsive-16by9">
+                   <iframe src="https://player.vimeo.com/video/329632239"></iframe>
+               </div>
+            </div>
+            
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack305CSLuisPS.jpg" alt="Code Black 305CS">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack302LobbySunset.jpg" alt="Code Black Lobby Sunset">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack1131stKissWS.jpg" alt="Code Black 305CS">
+            </div>
+            
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack305Garage2.jpg" alt="Code Black Garage2">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack208Rain.jpg" alt="Code Black Rain">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="media/images/CodeBlack305Dispatch2.jpg" alt="Code Black Dispatch2">
+            </div>
+        </div>
+       
+        <footer class="row justify-content-center pt-3"><p class="text-muted">Spencer Combs | &copy; 2019</p></footer>
+    </div> <!-- end of wrapper -->
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      
+     var host = 'https://' + document.location.hostname;
+var pages = [host + '/codeBlack.html', host + '/codeBlack2.html', host + '/sonsOfAnarchy.html'];
+
+var behind = document.getElementById('prev');
+var forward = document.getElementById('next');
+
+function prev(current, pages) {
+  var index = pages.indexOf(current);
+  if (index === 0) {
+    return pages[pages.length - 1];
+  }
+  return pages[index - 1];
+}
+
+function next(current, pages) {
+  var index = pages.indexOf(current);
+  if (index === pages.length - 1) {
+    return pages[0];
+  }
+  return pages[index + 1];
+}
+
+behind.addEventListener('click', function() {
+  var newUrl = prev(host + window.location.pathname, pages);
+  window.location.href = newUrl;
+})
+
+forward.addEventListener('click', function() {
+  var newUrl = next(host + window.location.pathname, pages);
+  window.location.href = newUrl;
+}) 
+      
+    </script>
+  </body>
