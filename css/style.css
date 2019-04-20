@@ -70,7 +70,7 @@
             padding-bottom: .375rem;
             padding-right: .75rem;
             padding-left: .75rem;
-            font-size: .9rem;
+            font-size: .8rem;
             border: none;
         }
 
@@ -80,7 +80,7 @@
 
         @media (min-width: 500px) {
             .btn {
-                font-size: .8rem;
+                font-size: .9rem;
             }
         }
 
