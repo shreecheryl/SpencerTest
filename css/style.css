@@ -74,6 +74,10 @@
             border: none;
         }
 
+        .btn:focus {
+            box-shadow: none;
+        }
+
         @media (min-width: 500px) {
             .btn {
                 font-size: .8rem;

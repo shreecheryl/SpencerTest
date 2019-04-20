@@ -1,7 +1,7 @@
 $(document).ready(function () {
     "use strict";
     var host = 'https://shreecheryl.github.io/SpencerTest',
-// var host = 'http://127.0.0.1:63856',
+  // var host = 'http://127.0.0.1:63856',
         pages = [host + '/powerCouple.html', host + '/codeBlack.html', host + '/sonsOfAnarchy.html'],
         behind = document.getElementById('prev'),
         forward = document.getElementById('next');
