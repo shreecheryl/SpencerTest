@@ -11,7 +11,7 @@
             margin-left: 0px;
         }
       
-        #homeContainer, #magnumContainer, #wompWompContainer, #ptsdContainer {
+        #homeContainer, #magnumContainer, #wompWompContainer, #ptsdContainer, #contact {
             height: auto;
             min-height: 100vh;
         }
@@ -43,6 +43,10 @@
               margin-right: auto;
               margin-left: auto;
             }
+        }
+
+        a {
+           color: #336699; 
         }
       
         nav a {
