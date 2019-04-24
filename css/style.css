@@ -10,10 +10,25 @@
             margin-right: 0px;
             margin-left: 0px;
         }
+
+        .container-fluid, #carouselHome {
+            width: 100%;
+            max-width: 1200px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .container-fluid {
+            max-width: 1920px;
+        }
       
         #homeContainer, #magnumContainer, #wompWompContainer, #ptsdContainer, #contact {
             height: auto;
             min-height: 100vh;
+        }
+
+        #contactInfo p, #contactInfo h6 {
+            font-size: 1.05rem;
         }
 
         header {
@@ -30,13 +45,6 @@
       
         .portfolio-header-logo:hover {
             text-decoration: none;
-        }
-
-        #carouselHome {
-            width: 100%;
-            max-width: 1200px;
-            margin-right: auto;
-            margin-left: auto;
         }
 
         @media (min-width: 500px) {
